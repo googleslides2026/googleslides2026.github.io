@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NULL</title>
+    <script>
+      // GitHub Pages serves this file for any unknown path. Stash the
+      // path the user actually wanted, then send them to the real app
+      // at "/". index.html restores the path before the router boots,
+      // so the router (not GitHub Pages) decides whether it's a real
+      // route or a genuine 404.
+      sessionStorage.setItem("null_redirect_path", location.pathname + location.search + location.hash);
+      location.replace("/");
+    </script>
+  </head>
+  <body></body>
+</html>
