@@ -1,0 +1,18 @@
+{
+  "name": "null-site",
+  "version": "1.0.0",
+  "description": "NULL — a black-and-white game/app hub with automatic content discovery.",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-catalog.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/generate-catalog.mjs",
+    "build": "vite build",
+    "postbuild": "node scripts/copy-content.mjs",
+    "preview": "vite preview",
+    "catalog": "node scripts/generate-catalog.mjs"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
