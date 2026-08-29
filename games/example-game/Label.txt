@@ -1,0 +1,4 @@
+Platformer
+Metroidvania
+Cheese
+Examplegame
