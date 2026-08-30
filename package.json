@@ -1,0 +1,13 @@
+{
+  "name": "null-site",
+  "version": "2.0.0",
+  "description": "NULL — a black-and-white game/app hub, built as plain static HTML pages with automatic content discovery.",
+  "type": "module",
+  "scripts": {
+    "catalog": "node scripts/generate-catalog.mjs",
+    "build": "node scripts/build-site.mjs",
+    "releases": "node scripts/build-releases.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "devDependencies": {}
+}
